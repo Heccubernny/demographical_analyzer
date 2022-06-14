@@ -30,7 +30,7 @@ def calculate_demographic_data(print_data = True):
 
 	#print the country with highest percentage
 	high_earning_country = per_country_with_higher.idxmax()
-	
+
 	per_high_earning_country = round(per_country_with_higher[high_earning_country], 1)
 	occupation_in_India = df[df['native-country'] == 'India']
 	popular_occupation_in_India = occupation_in_India[occupation_in_India.salary == '>50k'].occupation.value_counts().idxmax()
